@@ -126,7 +126,7 @@ if __name__ == "__main__":
     parser.add_argument("--n_classes", type=int, default=6, help="Number of classes.")
     parser.add_argument("--n_views", type=int, default=3, help="Number of modalities.")
     parser.add_argument("--hidden_size", type=int, default=128, help="Hidden size of two layer GCN.")
-    parser.add_argument("--rnn",type=str, default="transformer",)
+    parser.add_argument("--rnn",type=str, default="lstm",)
     parser.add_argument("--class_weight", action="store_true", default=False, help="Use class weights in nll loss.")
     parser.add_argument("--modalities", type=str, default="atv", help="Modalities",)
     parser.add_argument("--seqcontext_nlayer", type=int, default=2)
